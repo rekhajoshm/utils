@@ -24,7 +24,7 @@ for i in range(0,len(data_parent["items"])-1):
 
         f = open('hc_msgs', 'w')
         for j in range(0,len(data["items"])-1):
-		q = json.dumps(json.dumps(data["items"][j]["message"]) + "\n")
+		q = json.dumps(data["items"][j]["message"] + "\n")
                 f.write(q)
                 #pprint(data["items"][j]["from"]["mention_name"])
                 #pprint(str(j) + data["items"][j]["message"])
